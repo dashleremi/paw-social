@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw Social</title>
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- top nav bar -->
+    <nav>
+        <div class="container">
+            <h2 class="logo">
+                pawSocial
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="search for profiles, hashtags, etc...">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <div class="profile-picture">
+                    <img src="/images/profile-1.png">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main section, below nav bar -->
+     <main>
+        <!-- the entire page -->
+        <div class="container">
+            <!-- left side of the page -->
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-picture">
+                        <img src="/images/profile-1.png">
+                    </div>
+                    <div class="handle">
+                        <h4>Paxton Wuff</h4>
+                        <p class="text-muted">@pax.wuff</p>
+                    </div>
+                </a>
+
+                <!-- side bar -->
+                 <div class="side-bar">
+                    <a class="menu-item active">
+                        <span><i class="uil uil-estate"></i></span><h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-compass"></i></span><h3>Explore</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>Notifications</h3>
+                        <!-- notification popup -->
+                         <div class="notifications-popup">
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="/images/profile-2.png">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Benjamin Meow</b> accepted your friend request.
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="/images/profile-3.png">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Kitty Kat</b> accepted your friend request.
+                                    <small class="text-muted">3 DAYS AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="/images/profile-4.png">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Declan Paws</b> commented on your post.
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="/images/profile-5.png">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Bella and Kev</b> commented on a post you are tagged in.
+                                    <small class="text-muted">4 HOURS AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="/images/profile-6.png">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Em Muffins</b> commented on your post.
+                                    <small class="text-muted">4 DAYS AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="/images/profile-8.png">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Perry Furry</b> accepted your friend request.
+                                    <small class="text-muted">5 DAYS AGO</small>
+                                </div>
+                            </div>
+
+                         </div>
+                    </a>
+
+                    <a class="menu-item" id="messages-notifications">
+                        <span><i class="uil uil-envelope"><small class="notification-count">6</small></i></span><h3>Messages</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-bookmark-full"></i></span><h3>Bookmarks</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-chart-line"></i></span><h3>Analytics</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-palette"></i></span><h3>Theme</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-setting"></i></span><h3>Settings</h3>
+                    </a>
+                 </div>
+
+                 <labe class="btn btn-primary" for="create-post">Create Post</label>
+            </div>
+
+            <!-- middle section of the page -->
+            <div class="middle">
+                <!-- stories -->
+                 <div class="stories">
+
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="/images/profile-9.png">
+                        </div>
+                        <p class="name">Milo Waggleton</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="/images/profile-10.png">
+                        </div>
+                        <p class="name">Charlie Furryheart</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="/images/profile-11.png">
+                        </div>
+                        <p class="name">Coco Fluffington</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="/images/profile-12.png">
+                        </div>
+                        <p class="name">Luna Purrfect</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="/images/profile-13.png">
+                        </div>
+                        <p class="name">Molly Fuzzybunny</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="/images/profile-14.png">
+                        </div>
+                        <p class="name">Lucy Cuddlebug</p>
+                    </div>
+
+                </div>
+                <!-- end of stories -->
+
+                <form class="create-post">
+                    <div class="profile-picture">
+                        <img src="/images/profile-1.png">
+                    </div>
+                    <input type="text" placeholder="Write your post here..." id="create-post">
+                    <input type="submit" value="post" class="btn btn-primary">
+                </form>     
+
+                <!-- posts, feed, other friends, etc -->
+                <div class="feeds">
+
+                    <!-- feed 1 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="/images/profile-15.png">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Simba Whiskerbottom</h3>
+                                    <small>Miami, Florida, 20 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/feed/feed-3.png">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="/images/profile-13.png"></span>
+                            <span><img src="/images/profile-7.png"></span>
+                            <span><img src="/images/profile-20.png"></span>
+                            <p>Liked by <b>Daisy FurryTail</b> and <b>673 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Simba Whiskerbottom</b> Lorem ipsum dolor sit quisquam eius. <span class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 47 comments
+                        </div>
+                    </div>
+                    <!-- end of feed 1 -->
+
+                    <!-- feed 2 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="/images/profile-9.png">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Jack Pawsome</h3>
+                                    <small>London, United Kingdom, 20 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/feed/feed-2.png">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="/images/profile-14.png"></span>
+                            <span><img src="/images/profile-8.png"></span>
+                            <span><img src="/images/profile-21.png"></span>
+                            <p>Liked by <b>Rosie Fuzzynose</b> and <b>65 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Jack Pawsome</b> Lorem ipsum dolor sit quisquam eius.</p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 1,098 comments
+                        </div>
+                    </div>
+
+                    <!-- feed 3 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="/images/profile-8.png">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Ruby Fluffytail</h3>
+                                    <small>Tokyo, Japan, JUST NOW</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/feed/feed-1.png">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="/images/profile-21.png"></span>
+                            <span><img src="/images/profile-11.png"></span>
+                            <span><img src="/images/profile-10.png"></span>
+                            <p>Liked by <b>Sadie Sniffles</b> and <b>10 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Ruby Fluffytail</b> Lorem ipsum dolor sit quisquam eius.</p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 61 comments
+                        </div>
+                    </div>
+
+                    <!-- feed 4 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="/images/profile-5.png">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Chloe Furrydoodle</h3>
+                                    <small>New York City, New York, 2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/feed/feed-4.png">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="/images/profile-12.png"></span>
+                            <span><img src="/images/profile-6.png"></span>
+                            <span><img src="/images/profile-21.png"></span>
+                            <p>Liked by <b>Leo Purrkins</b> and <b>47 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Chloe Furrydoodle</b> Lorem ipsum dolor sit quisquam eius.</p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 807 comments
+                        </div>
+                    </div>
+
+                    <!-- feed 5 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="/images/profile-17.png">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Sophie Waggleton</h3>
+                                    <small>Madison, Wisconsin, 50 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/feed/feed-5.png">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="/images/profile-3.png"></span>
+                            <span><img src="/images/profile-20.png"></span>
+                            <span><img src="/images/profile-5.png"></span>
+                            <p>Liked by <b>Oscar Snugglepaws</b> and <b>102 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Sophie Waggleton</b> Lorem ipsum dolor sit quisquam eius.</p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 9,876 comments
+                        </div>
+                    </div>
+
+                    <!-- feed 6 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="/images/profile-12.png">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Oliver Pawsworth</h3>
+                                    <small>Los Angeles, California, 1 HOUR AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/feed/feed-6.png">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="/images/profile-17.png"></span>
+                            <span><img src="/images/profile-18.png"></span>
+                            <span><img src="/images/profile-19.png"></span>
+                            <p>Liked by <b>Finn Cuddlepaws</b> and <b>67 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Oliver Pawsworth</b> Lorem ipsum dolor sit quisquam eius.</p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 98 comments
+                        </div>
+                    </div>
+
+                    <!-- feed 7 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="/images/profile-13.png">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Nala Snugglewhisk</h3>
+                                    <small>Honolulu, Hawaii, 2 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/feed/feed-7.png">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="/images/profile-4.png"></span>
+                            <span><img src="/images/profile-10.png"></span>
+                            <span><img src="/images/profile-22.png"></span>
+                            <p>Liked by <b>Oliver Pawsworth</b> and <b>209 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Nala Snugglewhisk</b> Lorem ipsum dolor sit quisquam eius.</p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 23 comments
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of all feeds -->
+            <!-- end of middle section -->
+
+            <!-- right side of the page -->
+            <div class="right">
+
+            </div>
+        </div>
+     </main>
+    
+</body>
+</html>
