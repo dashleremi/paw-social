@@ -1,6 +1,6 @@
 # Paw Social
 
-Paw Social is a fun and interactive social media platform designed specifically for pet lovers to connect, share, and enjoy content related to their furry friends. Built with HTML, CSS, and JavaScript, this project showcases a simple yet engaging user interface and experience. All images generated utilizing text-to-image AI generator.
+Paw Social is a fun and interactive social media platform designed specifically for pets to connect, share, and enjoy content related to their furry friends. Built with HTML, CSS, and JavaScript, this project showcases a simple yet engaging user interface and experience. All images generated utilizing text-to-image AI generator.
 
 ## Features
 
