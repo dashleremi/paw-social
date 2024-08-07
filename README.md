@@ -15,7 +15,7 @@ Paw Social is a fun and interactive social media platform designed specifically 
 ## Tech Stack
 
 - **HTML:** Structure of the web pages.
-- **CSS:** Styling and layout of the web pages.
+- **SCSS:** Styling and layout of the web pages.
 - **JavaScript:** Interactive features and functionality.
 
 ## Project Structure
