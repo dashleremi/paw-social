@@ -1,14 +1,18 @@
 :root {
-  --color-dark: hsl(252, 30%, 17%);
-  --color-light: hsl(252, 30%, 95%);
-  --color-gray: hsl(252, 15%, 65%);
-  --color-primary: hsl(252, 75%, 60%);
+  --primary-color-hue: 252;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 95%;
+  --white-color-lightness: 100%;
+  --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+  --color-light: hsl(252, 30%, var(--light-color-lightness));
+  --color-gray: hsl(var(--primary-color-hue), 15%, 65%);
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
   --color-secondary: hsl(252, 100%, 90%);
   --color-success: hsl(120, 95%, 65%);
   --color-danger: hsl(0, 95%, 65%);
   --color-dark: hsl(252, 30%, 17%);
   --color-black: hsl(252, 30%, 10%);
-  --color-white: white;
+  --color-white: hsl(252, 30%, var(--white-color-lightness));
   --border-radius: 2rem;
   --card-border-radius: 1rem;
   --btn-padding: 0.6rem 2rem;
@@ -81,7 +85,7 @@ img {
 
 nav {
   width: 100%;
-  background: white;
+  background: var(--color-white);
   padding: 0.7rem 0;
   position: fixed;
   top: 0;
@@ -226,7 +230,7 @@ main .container .left .notifications-popup::before {
   width: 1.2rem;
   height: 1.2rem;
   display: block;
-  background: white;
+  background: var(--color-white);
   position: absolute;
   left: -0.6rem;
   transform: rotate(45deg);
@@ -492,6 +496,7 @@ main .container .right .requests .action {
   padding: 3rem;
   border-radius: var(--card-border-radius);
   width: 50%;
+  box-shadow: 0 0 1rem var(--color-primary);
 }
 .customize-theme .font-size > div {
   display: flex;
@@ -617,6 +622,9 @@ main .container .right .requests .action {
   .left .btn {
     display: none;
   }
+  .customize-theme .card {
+    width: 80vw;
+  }
 }
 @media screen and (max-width: 992px) {
   nav .search-bar {
@@ -648,5 +656,8 @@ main .container .right .requests .action {
   }
   main .container .right {
     display: none;
+  }
+  .customize-theme .card {
+    width: 92vw;
   }
 }/*# sourceMappingURL=style.css.map */
